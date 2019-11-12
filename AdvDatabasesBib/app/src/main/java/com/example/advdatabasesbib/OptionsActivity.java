@@ -45,6 +45,11 @@ public class OptionsActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void showVerleihliste(View view) {
+        Intent i = new Intent(OptionsActivity.this, VerleihlisteActivity.class);
+        startActivity(i);
+    }
+
     public void logout(View view) {
         // TODO: Mitarbeiter ausloggen
         Toast.makeText(this, "Logout erfolgreich.", Toast.LENGTH_LONG).show();

@@ -15,6 +15,9 @@ import java.util.ArrayList;
 
 public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.ViewHolder> {
 
+    // TODO: Objekte übergeben, sodass diese in der RecyclerView angezeigt werden
+    // TODO: Wenn ein Item angeklickt wird, öffne den DetailScreen und übergebe die Werte des Objektes
+
     ArrayList<String> firstnames_list, lastnames_list, kids_list;
     Context context;
 
@@ -34,10 +37,10 @@ public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull CustomerAdapter.ViewHolder viewHolder, int i) {
-        //viewHolder.firstname.setText("Test");
         viewHolder.firstname.setText(firstnames_list.get(i));
         viewHolder.lastname.setText(lastnames_list.get(i));
         viewHolder.kid.setText(kids_list.get(i));
+        viewHolder.image.setImageResource(R.drawable.customer_avatar);
     }
 
     @Override
@@ -60,6 +63,5 @@ public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.ViewHo
             linLayout = itemView.findViewById(R.id.customer_view_linLay);
         }
     }
-
 
 }

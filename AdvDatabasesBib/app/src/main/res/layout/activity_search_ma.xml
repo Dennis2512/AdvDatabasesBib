@@ -82,6 +82,7 @@
 
         <Button
             android:id="@+id/search_ma_btn"
+            android:onClick="searchMAInList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -90,8 +91,12 @@
             android:textColor="@color/white"
             android:text="@string/search"/>
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ma_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+
     </LinearLayout>
-
-
 
 </ScrollView>

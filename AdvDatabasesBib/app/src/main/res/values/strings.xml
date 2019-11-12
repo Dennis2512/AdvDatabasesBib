@@ -14,6 +14,9 @@
     <string name="add_ma">(+)Mitarbeiter</string>
     <string name="add_book">(+)Buch</string>
     <string name="add">Hinzufügen</string>
+    <string name="verleihliste">Verleihliste</string>
+    <string name="verleihen">Buch verleihen</string>
+    <string name="verleihen_btn">Verleihen</string>
 
     <!-- Buch hinzufügen Strings -->
     <string name="add_book_text">Buch hinzufügen</string>

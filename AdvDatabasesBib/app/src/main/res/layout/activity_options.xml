@@ -137,6 +137,19 @@
 
     </LinearLayout>
 
+        <Button
+            android:id="@+id/verleihliste_btn"
+            android:onClick="showVerleihliste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/verleihliste"
+            android:textSize="15sp"
+            android:textColor="@color/white"/>
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="2dp"

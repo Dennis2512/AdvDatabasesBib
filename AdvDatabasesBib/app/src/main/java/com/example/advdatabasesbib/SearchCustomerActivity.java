@@ -1,6 +1,8 @@
 package com.example.advdatabasesbib;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -46,6 +48,11 @@ public class SearchCustomerActivity extends AppCompatActivity {
         customerAdapter = new CustomerAdapter(list_of_firstnames, list_of_lastnames, list_of_kids, this);
         customerList.setAdapter(customerAdapter);
         customerList.getAdapter().notifyDataSetChanged();
+    }
+
+    public void searchCustomerInList(View view) {
+        // TODO: Liste nach angegebenen Parametern durchsuchen und nur passendes Item anzeigen
+        Toast.makeText(this, "Die Liste wurde nach dem gewünschten Kunden durchsucht.", Toast.LENGTH_SHORT).show();
     }
 
 }

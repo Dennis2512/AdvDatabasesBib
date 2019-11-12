@@ -82,6 +82,7 @@
 
         <Button
             android:id="@+id/search_customer_btn"
+            android:onClick="searchCustomerInList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
